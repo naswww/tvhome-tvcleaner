@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">电视内存清理</string>
+    <string name="app_title">电视内存清理 · 本地 ADB 深度回收</string>
+    <string name="hint">只保留遥控鼠标与系统必要进程 · 不 root · 不改 APK · 扫码登录/会员不受影响</string>
+    <string name="btn_check">① 刷新状态 / 自检</string>
+    <string name="btn_clean">② 标准清理 / Standard</string>
+    <string name="btn_deep">③ 深度清理 / Deep</string>
+    <string name="btn_youku">④ 清理并打开视频应用</string>
+    <string name="btn_guard">⑥ 清单校验 / 修复</string>
+    <string name="btn_mouse">⑤ 恢复遥控鼠标</string>
+    <string name="cb_keep_youku">深度清理时保留视频应用（不勾选则一起停）</string>
+</resources>

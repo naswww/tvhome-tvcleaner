@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#FF10151C"
+    android:padding="18dp">
+
+    <!-- LEFT: compact, fixed-position controls -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.38"
+        android:orientation="vertical"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            android:textColor="#FFFFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:paddingBottom="2dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hint"
+            android:textColor="#FF9AA7B4"
+            android:textSize="11sp"
+            android:maxLines="1"
+            android:paddingBottom="4dp" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:textColor="#FF8FD3FF"
+            android:textSize="13sp"
+            android:lineSpacingExtra="1dp"
+            android:paddingBottom="4dp"
+            android:text="checking..." />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="3"
+            android:ellipsize="end"
+            android:textColor="#FFFFD9A0"
+            android:textSize="13sp"
+            android:lineSpacingExtra="2dp"
+            android:background="#FF16202B"
+            android:padding="8dp"
+            android:text="把焦点移到按钮上，或将鼠标光标悬停在按钮上，这里会显示该按钮的说明。" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FF6FE3B0"
+            android:textSize="12sp"
+            android:paddingBottom="4dp"
+            android:text="版本 v?.?.?" />
+
+        <Button android:id="@+id/btn_check"
+            android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:minHeight="0dp" android:textSize="13sp"
+            android:textAllCaps="false" android:background="@drawable/btn_bg" android:textColor="@color/btn_text" android:layout_marginBottom="3dp"
+            android:text="@string/btn_check" />
+
+        <Button android:id="@+id/btn_clean"
+            android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:minHeight="0dp" android:textSize="13sp"
+            android:textAllCaps="false" android:background="@drawable/btn_bg" android:textColor="@color/btn_text" android:layout_marginBottom="3dp"
+            android:text="@string/btn_clean" />
+
+        <Button android:id="@+id/btn_deep"
+            android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:minHeight="0dp" android:textSize="13sp"
+            android:textAllCaps="false" android:background="@drawable/btn_bg" android:textColor="@color/btn_text" android:layout_marginBottom="3dp"
+            android:text="@string/btn_deep" />
+
+        <Button android:id="@+id/btn_youku"
+            android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:minHeight="0dp" android:textSize="13sp"
+            android:textAllCaps="false" android:background="@drawable/btn_bg" android:textColor="@color/btn_text" android:layout_marginBottom="3dp"
+            android:text="@string/btn_youku" />
+
+        <Button android:id="@+id/btn_mouse"
+            android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:minHeight="0dp" android:textSize="13sp"
+            android:textAllCaps="false" android:background="@drawable/btn_bg" android:textColor="@color/btn_text" android:layout_marginBottom="3dp"
+            android:text="@string/btn_mouse" />
+
+        <Button android:id="@+id/btn_guard"
+            android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1" android:minHeight="0dp" android:textSize="13sp"
+            android:textAllCaps="false" android:background="@drawable/btn_bg" android:textColor="@color/btn_text" android:layout_marginBottom="4dp"
+            android:text="@string/btn_guard" />
+
+        <CheckBox android:id="@+id/cb_keep_youku"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="34dp"
+            android:textSize="12sp"
+            android:textColor="#FFE8EDF2"
+            android:text="@string/cb_keep_youku" />
+    </LinearLayout>
+
+    <!-- RIGHT: full-height log -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.62"
+        android:orientation="vertical"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="运行日志 / Run log"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:paddingBottom="6dp" />
+
+        <ScrollView
+            android:id="@+id/scroll_log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FF080B10"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFB7C4D1"
+                android:textSize="13sp"
+                android:typeface="monospace"
+                android:lineSpacingExtra="2dp" />
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

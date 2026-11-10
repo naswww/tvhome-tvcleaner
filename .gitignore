@@ -1,0 +1,45 @@
+# 构建产物与二进制（发布仓只保留文本）
+build/
+*.apk
+*.apks
+*.idsig
+*.dex
+*.class
+*.jar
+*.raw
+*.png
+*.jpg
+*.zip
+*.log
+
+# 密钥与凭据 —— 绝不入库
+.keystore/
+*.keystore
+*.jks
+adbkey
+adbkey.pub
+*.pem
+*.key
+privacy.env
+
+# 设备取证与备份
+backup/
+backup_*/
+bugreport*
+crash-*/
+tvdiag/
+*.tombs
+
+# 本地工作记忆与内部协作产物
+.workbuddy-ai/
+deliverables/
+toolchain/
+release/
+legacy/
+
+# 编辑器 / 系统
+.idea/
+*.iml
+local.properties
+Thumbs.db
+.DS_Store
